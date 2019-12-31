@@ -10,9 +10,16 @@ const addNote = function (title, body) {
         title:title,
         body: body
     })
-    console.log(notes)
 
+    saveNotes(notes)
+    console.log(notes)
 }
+
+const saveNotes = function (notes) {
+    const dataJson = JSON.stringify(notes)
+    fs.writeFileSync('notes.json', dataJson)
+}
+
 
 const loadNotes = function () {
     try {
@@ -22,9 +29,6 @@ const loadNotes = function () {
     } catch (e) {
         return []
     }
-
-
-
 }
 
 
