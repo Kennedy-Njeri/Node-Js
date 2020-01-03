@@ -40,6 +40,10 @@ const removeNote = (title) => {
 
 }
 
+const listNotes = () => {
+
+}
+
 
 const saveNotes = (notes) => {
     const dataJson = JSON.stringify(notes)
@@ -61,5 +65,6 @@ const loadNotes = () =>{
 module.exports = {
     getNotes: getNotes,
     addNote: addNote,
-    removeNote: removeNote
+    removeNote: removeNote,
+    listNotes:listNotes
 }
