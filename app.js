@@ -89,6 +89,7 @@ yargs.command({
     command: 'list',
     describe: 'List notes',
     handler() {
+        notes.listNotes()
         //console.log("Listing out all notes!")
     }
 })

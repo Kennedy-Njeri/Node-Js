@@ -41,7 +41,7 @@ const removeNote = (title) => {
 }
 
 const listNotes = () => {
-
+    console.log(chalk.inverse("Your Notes"))
 }
 
 
